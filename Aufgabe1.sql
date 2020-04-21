@@ -19,9 +19,7 @@ CREATE TABLE mitarbeiter (
 
 -- Aufgabe 1b)
 
-UPDATE mitarbeiter SET pnr = 1, name = 'Einstein', vorname = 'Albert', gehalt = 10;
-UPDATE mitarbeiter SET pnr = 2, name = 'Merkel', vorname = 'Angela', gehalt = 20;
-UPDATE mitarbeiter SET pnr = 3, name = 'Goethe', vorname = 'Wolfgang', gehalt = 5.0;
+INSERT INTO mitarbeiter (pnr, name, vorname, gehalt) VALUES ( 1, 'Einstein', 'Albert', 10), ( 2, 'Merkel', 'Angela', 20), ( 3, 'Goethe', 'Wolfgang', 50);
 
 
 -- Aufgabe 1c)
@@ -58,6 +56,4 @@ Output Aufgabe 1d)
 
 -- Aufgabe 1e)
 
-UPDATE arbeitet_in SET pnr = 1, stationid = 2;
-UPDATE arbeitet_in SET pnr = 2, stationid = 1;
-UPDATE arbeitet_in SET pnr = 3, stationid = 2;
+INSERT INTO  arbeitet_in (pnr, stationid) VALUES (1, 2), (2, 1), (3, 2);
