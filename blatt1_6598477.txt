@@ -1,0 +1,28 @@
+/*%%%%head%%{"type":"submission","name":"blatt1","authors":[["Jannik Zorn","jannik@zorn.net","6598477"]]}%%*/
+/*%%1a%%*/
+/* a) Erstellen Sie eine Tabelle mit dem Namen mitarbeiter, welche folgende Attribute enthält: pnr, name, vorname, gehalt.
+Tabellennamen werden normalerweise immer in Kleinbuchstaben erstellt. Wir verwenden hier ebenfalls Kleinbuchstaben für alle Attribute. 
+Dies dient vor allem dafür Fehler zu vermeiden, da die Relevanz der Schreibweise der Attribute neben den Einstellungen auch vom Betriebssystem abhängt. */
+CREATE TABLE mitarbeiter (
+  pnr INT NOT NULL,
+  name VARCHAR(45) NULL,
+  vorname VARCHAR(45) NULL,
+  gehalt INT NULL,
+  PRIMARY KEY (pnr));
+
+
+/*%%1b%%*/
+/* b) Fügen Sie drei Datensätze in die Tabelle mitarbeiter ein (als ein Statement!) */
+INSERT INTO mitarbeiter (pnr, name, vorname, gehalt) VALUES ( 1, 'Einstein', 'Albert', 10), ( 2, 'Merkel', 'Angela', 20), ( 3, 'Goethe', 'Wolfgang', 50);
+
+/*%%1c%%*/
+/* c) Geben Sie alle Datensätze der Tabelle station mit den Attributen: name, anzahlbetten aus. */
+SELECT name, anzahlbetten FROM krankenhaus.station;
+
+/*%%1d%%*/
+/* d) Geben Sie alle Datensätze der Tabelle station aus, die mehr als 10 Betten haben, alle Attribute: id, name, anzahlbetten. */
+SELECT * FROM krankenhaus.station WHERE anzahlbetten > 10;
+
+/*%%1e%%*/
+/* e) Fügen Sie drei Datensätze in die Tabelle arbeitet_in ein (als ein Statement!) */
+INSERT INTO  arbeitet_in (pnr, stationid) VALUES (1, 2), (2, 1), (3, 2);

@@ -1,0 +1,20 @@
+/*%%%%head%%{"type":"template","name":"blatt1"}%%*/
+/*%%1a%%*/
+/* a) Erstellen Sie eine Tabelle mit dem Namen mitarbeiter, welche folgende Attribute enthält: pnr, name, vorname, gehalt.
+Tabellennamen werden normalerweise immer in Kleinbuchstaben erstellt. Wir verwenden hier ebenfalls Kleinbuchstaben für alle Attribute. 
+Dies dient vor allem dafür Fehler zu vermeiden, da die Relevanz der Schreibweise der Attribute neben den Einstellungen auch vom Betriebssystem abhängt. */
+create ...
+
+/*%%1b%%*/
+/* b) Fügen Sie drei Datensätze in die Tabelle mitarbeiter ein (als ein Statement!) */
+
+/*%%1c%%*/
+/* c) Geben Sie alle Datensätze der Tabelle station mit den Attributen: name, anzahlbetten aus. */
+
+/*%%1d%%*/
+/* d) Geben Sie alle Datensätze der Tabelle station aus, die mehr als 10 Betten haben, alle Attribute: id, name, anzahlbetten. */
+
+/*%%1e%%*/
+/* e) Fügen Sie drei Datensätze in die Tabelle arbeitet_in ein (als ein Statement!) */
+
+
